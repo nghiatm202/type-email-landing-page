@@ -1,0 +1,32 @@
+.feature {
+  padding: 102px 0 83px;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &-img {
+    flex-shrink: 0;
+  }
+
+  &-content {
+    max-width: 548px;
+    flex: 1;
+
+    .button {
+      margin-top: 51px;
+      padding: 16px 58px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 18px;
+  }
+
+  &-text {
+    margin-bottom: 28px;
+  }
+}

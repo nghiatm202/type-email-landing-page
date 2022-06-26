@@ -1,0 +1,35 @@
+.footer {
+  padding: 70px 0;
+  background-color: var(--gray1e);
+
+  &-header {
+    text-align: center;
+
+    .heading--big {
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .text {
+      max-width: 339px;
+      margin: 0 auto 35px;
+      color: var(--grayb5);
+    }
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 24px;
+    margin: 0 auto;
+    white-space: nowrap;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .icon {
+      width: 20px;
+    }
+  }
+}

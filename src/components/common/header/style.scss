@@ -1,0 +1,106 @@
+.header {
+  background-image: linear-gradient(to bottom, var(--gray1e) 80%, var(--body-bg) 80%);
+  margin-bottom: 139px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0 83px;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 0 36px;
+      list-style: none;
+
+      &-link {
+        color: var(--grayb5);
+        transition: color 0.25s ease-out;
+        position: relative;
+        display: inline-block;
+
+        &::before {
+          content: '';
+          height: 2px;
+          width: 0;
+          background-image: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          transition: width 0.25s ease-in;
+        }
+
+        &:hover {
+          color: white;
+
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    font-size: 25px;
+    font-weight: 600;
+
+    span {
+      background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+      --webkit-background-clip: text;
+    }
+  }
+
+  &-login {
+    padding: 9px 25px;
+    color: white;
+    display: inline-block;
+    border-radius: 6px;
+    line-height: 1.625; // line-height: 26px / font-size: 16px
+    position: relative;
+
+    &::before {
+      background-color: var(--grayb5);
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      opacity: 0.2;
+    }
+  }
+
+  &-content {
+    max-width: 873px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-heading {
+    font-size: 52px;
+    line-height: calc(62 / 52);
+    margin-bottom: 54px;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 28px;
+    margin-bottom: 88px;
+  }
+
+  &-works {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+    color: white;
+    font-size: 18px;
+  }
+}

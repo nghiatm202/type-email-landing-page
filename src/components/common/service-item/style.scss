@@ -1,0 +1,31 @@
+.service-item {
+  padding: 43px 35px 63px;
+  background-color: transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: var(--body-bg);
+    box-shadow: 0px 16px 250px 10px rgba(155, 155, 155, 0.25);
+
+    .service-icon {
+      color: white;
+      background-color: var(--primary-color);
+    }
+  }
+
+  .service-icon {
+    width: 66px;
+    height: 66px;
+    border-radius: 100rem;
+    margin-bottom: 46px;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+  }
+
+  .service-title {
+    margin-bottom: 13px;
+  }
+}
